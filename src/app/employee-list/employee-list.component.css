@@ -1,0 +1,12 @@
+.container {
+ width: 90%;
+  margin: 0 auto;
+}
+table{
+  width: 90%;
+  margin: 0 auto;
+}
+
+mat-list{
+  display: flex;
+}

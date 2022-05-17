@@ -17,6 +17,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EmployeesDetailComponent } from './employees-detail/employees-detail.component';
+import {MatListModule} from "@angular/material/list";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -25,21 +27,23 @@ import { EmployeesDetailComponent } from './employees-detail/employees-detail.co
     DialogComponent,
     EmployeesDetailComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatListModule,
+        MatCardModule
+    ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
