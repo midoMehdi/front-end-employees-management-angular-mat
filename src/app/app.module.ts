@@ -19,6 +19,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EmployeesDetailComponent } from './employees-detail/employees-detail.component';
 import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -27,23 +28,24 @@ import {MatCardModule} from "@angular/material/card";
     DialogComponent,
     EmployeesDetailComponent
   ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatTableModule,
-        MatButtonModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatDialogModule,
-        MatFormFieldModule,
-        MatInputModule,
-        ReactiveFormsModule,
-        FormsModule,
-        MatListModule,
-        MatCardModule
-    ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatListModule,
+    MatCardModule,
+    MatGridListModule
+  ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
