@@ -1,19 +1,20 @@
 .tableOfEmployees {
-  width: 80%;
-  margin-left: auto;
   margin-top: 30px;
 }
 
 table{
   width: 98%;
 }
-
+div > a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in;
+  margin-bottom: 5px;
+}
 div > a:hover{
   color: blue;
+  border-bottom: 1px solid blue;
   cursor: pointer;
-  font-style: oblique;
-  transition: 0.25s linear;
-  text-decoration: underline;
+  font-size: 15px;
 
 }
 

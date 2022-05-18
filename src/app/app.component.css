@@ -1,3 +1,13 @@
 .space{
   flex: 1 1 auto;
 }
+
+.sidebar{
+  width: 20%;
+  margin-top: 7%;
+}
+
+.core{
+  margin-left: auto;
+  width: 80%;
+}

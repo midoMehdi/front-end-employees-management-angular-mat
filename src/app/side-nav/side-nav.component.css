@@ -1,0 +1,20 @@
+mat-drawer-container{
+
+}
+mat-sidenav-content{
+  padding: 10px 0px 20px 30px;
+  background-color: white;
+
+}
+
+
+mat-sidenav-content > a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in;
+}
+mat-sidenav-content > a:hover{
+  border-bottom: 1px solid blue;
+  color: blue;
+  font-size: 15px;
+  cursor: pointer;
+}

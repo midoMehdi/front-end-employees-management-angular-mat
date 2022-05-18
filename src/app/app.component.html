@@ -1,16 +1,30 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>Employees Management</span>
-  <span class="space"></span>
-  <button mat-icon-button (click)="openDialog()">
-    <mat-icon>login</mat-icon>
-  </button>
-</mat-toolbar>
+<!--Header-->
 <div>
-  <router-outlet></router-outlet>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Employees Management</span>
+    <span class="space"></span>
+    <button mat-icon-button (click)="openDialog()">
+      <mat-icon>login</mat-icon>
+    </button>
+  </mat-toolbar>
 </div>
+
+<div fxLayout fxLayoutGap="5px">
+<!-- Side bar -->
+  <div class="sidebar">
+    <app-side-nav></app-side-nav>
+  </div>
+
+<!-- Core -->
+  <div class="core">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+<!-- footer-->
 <div>
 
 </div>

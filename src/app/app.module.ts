@@ -22,6 +22,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {FlexModule} from "@angular/flex-layout";
 import { SideNavComponent } from './side-nav/side-nav.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
         MatListModule,
         MatCardModule,
         MatGridListModule,
-        FlexModule
+        FlexModule,
+        MatSidenavModule
     ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
