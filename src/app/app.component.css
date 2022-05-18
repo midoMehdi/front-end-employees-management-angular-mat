@@ -1,7 +1,13 @@
+.container{
+  position: relative;
+  min-height:100%;
+}
 .space{
   flex: 1 1 auto;
 }
-
+.sideAndCore{
+  margin-bottom: 60px;
+}
 .sidebar{
   width: 20%;
   margin-top: 7%;
@@ -10,4 +16,13 @@
 .core{
   margin-left: auto;
   width: 80%;
+
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #005b8f;
 }

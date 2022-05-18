@@ -23,6 +23,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {FlexModule} from "@angular/flex-layout";
 import { SideNavComponent } from './side-nav/side-nav.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { FooterComponent } from './footer/footer.component';
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     EmployeeListComponent,
     DialogComponent,
     EmployeesDetailComponent,
-    SideNavComponent
+    SideNavComponent,
+    FooterComponent
   ],
     imports: [
         BrowserModule,
@@ -50,7 +53,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
         MatCardModule,
         MatGridListModule,
         FlexModule,
-        MatSidenavModule
+        MatSidenavModule,
+        MatTabsModule
     ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

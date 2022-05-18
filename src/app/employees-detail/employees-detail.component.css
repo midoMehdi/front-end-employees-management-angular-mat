@@ -1,4 +1,6 @@
-
+.listOfCard{
+  margin-bottom: 70px;
+}
 mat-card{
   max-width: 300px;
   display: inline-block;
