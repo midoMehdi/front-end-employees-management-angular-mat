@@ -21,13 +21,15 @@ import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {FlexModule} from "@angular/flex-layout";
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     DialogComponent,
-    EmployeesDetailComponent
+    EmployeesDetailComponent,
+    SideNavComponent
   ],
     imports: [
         BrowserModule,
