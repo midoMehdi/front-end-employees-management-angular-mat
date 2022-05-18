@@ -2,10 +2,10 @@
   <h2> Employees list </h2>
   <div class="row">
     <div class="col-8">
-      <mat-list >
-        <button mat-list-item (click)="displayEmployeesByTable()">Table</button>
-        <button mat-list-item (click)="displayEmployeesByCard()">Card</button>
-      </mat-list>
+      <div >
+        <a mat-list-item (click)="displayEmployeesByTable()">Table</a>
+        <a mat-list-item (click)="displayEmployeesByCard()">Card</a>
+      </div>
     </div>
   </div>
   <table mat-table [dataSource]="employees" class="mat-elevation-z8" *ngIf="isTable">
@@ -39,12 +39,10 @@
         </button>
       </td>
     </ng-container>
-
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  <app-employees-detail *ngIf="isCard" [employees]="employees"></app-employees-detail>
 </div>
-
+<app-employees-detail *ngIf="isCard" [employees]="employees"></app-employees-detail>
 
 

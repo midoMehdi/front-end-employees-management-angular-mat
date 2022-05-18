@@ -1,31 +1,29 @@
-<mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile *ngFor="let employee of employees">
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{employee.firstName}}{{employee.lastName}}</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="assets/images/mark-zuckerberg.jpeg"  alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-icon-button label="details">
-          <mat-icon color="accent" (click)="detailsEmployee(employee.id)">details</mat-icon>
-        </button>
-        <button mat-icon-button>
-          <mat-icon color="primary" (click)="updateEmployee(employee.id)">edit</mat-icon>
-        </button>
-        <button mat-icon-button>
-          <mat-icon color="warn" (click)="deleteEmployee(employee.id)">delete</mat-icon>
-        </button>
-      </mat-card-actions>
-    </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="listOfCard">
+  <mat-card *ngFor="let employee of employees" row-height="2:4">
+    <mat-card-header>
+      <img mat-card-avatar src="assets/images/mark-zuckerberg.jpeg" />
+      <mat-card-title>{{employee.firstName}}{{employee.lastName}}</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets/images/mark-zuckerberg.jpeg"  alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-icon-button label="details">
+        <mat-icon color="accent" (click)="detailsEmployee(employee.id)">details</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon color="primary" (click)="updateEmployee(employee.id)">edit</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon color="warn" (click)="deleteEmployee(employee.id)">delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
 
+</div>
