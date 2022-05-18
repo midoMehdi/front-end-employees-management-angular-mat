@@ -20,6 +20,7 @@ import { EmployeesDetailComponent } from './employees-detail/employees-detail.co
 import {MatListModule} from "@angular/material/list";
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
+import {FlexModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -28,24 +29,25 @@ import {MatGridListModule} from "@angular/material/grid-list";
     DialogComponent,
     EmployeesDetailComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatListModule,
-    MatCardModule,
-    MatGridListModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatListModule,
+        MatCardModule,
+        MatGridListModule,
+        FlexModule
+    ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
 })

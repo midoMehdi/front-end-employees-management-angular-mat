@@ -1,13 +1,11 @@
-<div class="">
-  <h2> Employees list </h2>
-  <div class="row">
-    <div class="col-8">
-      <div >
-        <a mat-list-item (click)="displayEmployeesByTable()">Table</a>
-        <a mat-list-item (click)="displayEmployeesByCard()">Card</a>
-      </div>
-    </div>
+<div class="tableOfEmployees">
+  <h1 style="text-align: center; font-size: 44px; font-family: sans-serif; font-style: oblique"> Employees Management </h1>
+  <div fxLayout fxLayoutGap="10px">
+    <span>Display by: </span>
+    <a mat-list-item (click)="displayEmployeesByTable()" >Table</a>
+    <a mat-list-item (click)="displayEmployeesByCard()">Card</a>
   </div>
+
   <table mat-table [dataSource]="employees" class="mat-elevation-z8" *ngIf="isTable">
     <ng-container matColumnDef="id_employee">
       <th mat-header-cell *matHeaderCellDef>id</th>
@@ -42,7 +40,8 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+  <app-employees-detail *ngIf="isCard" [employees]="employees"></app-employees-detail>
 </div>
-<app-employees-detail *ngIf="isCard" [employees]="employees"></app-employees-detail>
+
 
 

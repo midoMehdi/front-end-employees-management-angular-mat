@@ -1,12 +1,9 @@
-.listOfCard{
-  width: 80%;
-  margin-left: auto;
 
-}
 mat-card{
   max-width: 300px;
   display: inline-block;
-  margin: 10px;
+  margin: 5px;
+  border-radius: 10px;
 
 }
 mat-card:hover{
