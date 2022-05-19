@@ -1,9 +1,12 @@
 .tableOfEmployees {
   margin-top: 30px;
+  margin-bottom: 65px;
+
 }
 
 table{
   width: 98%;
+  padding: 5px;
 }
 div > a {
   border-bottom: 1px solid transparent;
