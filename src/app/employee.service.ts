@@ -9,17 +9,18 @@ import {HttpClient} from "@angular/common/http";
 export class EmployeeService {
 
   baseURL : string;
-  urlGetById : string;
   constructor(private httpClient: HttpClient) {
     this.baseURL =  "http://localhost:8080/api/v1/employees";
   }
 
   getEmployeesList() : Observable<Employee[]>{
-    console.log("test");
     return this.httpClient.get<Employee[]>(this.baseURL);
   }
 
   addEmployee(employee :Employee) : Observable<Employee>{
     return this.httpClient.post<Employee>(this.baseURL,employee);
+  }
+  deleteAllEmployees(){
+    return this.httpClient.delete<Employee[]>(this.baseURL);
   }
 }

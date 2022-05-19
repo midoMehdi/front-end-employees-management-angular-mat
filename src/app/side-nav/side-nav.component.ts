@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {EmployeeService} from "../employee.service";
 import {Employee} from "../../model/Employee";
+import {Route, Router} from "@angular/router";
 
 @Component({
   selector: 'app-side-nav',
@@ -10,7 +11,8 @@ import {Employee} from "../../model/Employee";
 export class SideNavComponent implements OnInit {
   sortEmployees : Employee[];
 
-  constructor(private employeeService : EmployeeService) {
+  constructor(private employeeService : EmployeeService,
+              private router : Router) {
     this.employeeService.getEmployeesList().subscribe((data)=>{
       this.sortEmployees = data;
     });
@@ -19,11 +21,11 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addEmployee(){
-
-  }
 
   deleteAllEmployees(){
+    this.employeeService.deleteAllEmployees().subscribe(()=>{
+
+    });
 
   }
 
