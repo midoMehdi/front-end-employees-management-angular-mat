@@ -27,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatSelectModule} from "@angular/material/select";
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
     EmployeesDetailComponent,
     SideNavComponent,
     FooterComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    UpdateEmployeeComponent
   ],
     imports: [
         BrowserModule,
