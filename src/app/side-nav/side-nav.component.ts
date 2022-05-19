@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {EmployeeService} from "../employee.service";
+import {Employee} from "../../model/Employee";
 
 @Component({
   selector: 'app-side-nav',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav.component.css']
 })
 export class SideNavComponent implements OnInit {
+  sortEmployees : Employee[];
 
-  constructor() { }
+  constructor(private employeeService : EmployeeService) {
+    this.employeeService.getEmployeesList().subscribe((data)=>{
+      this.sortEmployees = data;
+    });
+  }
 
   ngOnInit(): void {
+  }
+
+  addEmployee(){
+
+  }
+
+  deleteAllEmployees(){
+
   }
 
 }

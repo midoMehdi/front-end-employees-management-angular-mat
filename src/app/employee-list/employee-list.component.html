@@ -1,5 +1,13 @@
 <div class="tableOfEmployees">
   <h1 style="text-align: center; font-size: 44px; font-family: sans-serif; font-style: oblique"> Employees Management </h1>
+  <mat-form-field appearance="fill">
+    <mat-label>Sort By</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let sort of sortEmployeesBy" [value]="sort.value">
+        {{sort.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
   <mat-tab-group>
     <mat-tab label="First">
       <table mat-table [dataSource]="employees" class="mat-elevation-z8">

@@ -10,8 +10,14 @@ import {Employee} from "../../model/Employee";
 export class EmployeeListComponent implements OnInit {
   displayedColumns: string[]= ['id_employee','first name', 'last name', 'emailId','Actions'];
   employees : Employee[] = [];
-  isTable = true;
-  isCard = false;
+
+
+  sortEmployeesBy = [
+    {value: "id",viewValue: "Id"},
+    {value: "firstName",viewValue: "First name"},
+    {value: "lastName",viewValue: "Last name"},
+    {value: "emailId",viewValue: "email"},
+  ];
   constructor(private employeeService : EmployeeService) { }
 
   ngOnInit(): void {
@@ -36,12 +42,5 @@ export class EmployeeListComponent implements OnInit {
   detailsEmployee(id : number){
 
   }
-  displayEmployeesByTable(){
-    this.isTable = true;
-    this.isCard = false;
-  }
-  displayEmployeesByCard(){
-    this.isTable = false;
-    this.isCard = true;
-  }
+
 }

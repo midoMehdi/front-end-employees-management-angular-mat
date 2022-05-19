@@ -25,6 +25,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import { FooterComponent } from './footer/footer.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import {MatSelectModule} from "@angular/material/select";
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import {MatTabsModule} from "@angular/material/tabs";
     DialogComponent,
     EmployeesDetailComponent,
     SideNavComponent,
-    FooterComponent
+    FooterComponent,
+    AddEmployeeComponent
   ],
     imports: [
         BrowserModule,
@@ -54,7 +57,8 @@ import {MatTabsModule} from "@angular/material/tabs";
         MatGridListModule,
         FlexModule,
         MatSidenavModule,
-        MatTabsModule
+        MatTabsModule,
+        MatSelectModule
     ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
