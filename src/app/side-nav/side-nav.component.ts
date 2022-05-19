@@ -24,7 +24,9 @@ export class SideNavComponent implements OnInit {
 
   deleteAllEmployees(){
     this.employeeService.deleteAllEmployees().subscribe(()=>{
-
+      this.router.navigateByUrl('/employees', { skipLocationChange: true }).then(() => {
+        window.location.reload();
+      });
     });
 
   }
